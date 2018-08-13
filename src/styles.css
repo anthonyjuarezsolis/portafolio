@@ -1,6 +1,12 @@
+/* SVG ANIMATION CARGAR */
+svg path,
+svg rect{
+  fill: black;
+}
 
 
 
+/* ANIMACIONES */
 .animated {
     -webkit-animation-duration: 0.3s;
     animation-duration: 0.3s;
