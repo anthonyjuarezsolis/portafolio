@@ -11,6 +11,8 @@ import { ProductoDescription } from '../../interfaces/producto-descripcion.inter
 export class ItemComponent implements OnInit {
 
 producto: ProductoDescription;
+id: string;
+
 
 anios: number = new Date().getFullYear();
 month: number = new Date().getMonth();
@@ -26,10 +28,8 @@ day: number = new Date().getDate();
    // console.log(parametros['id']);
     this.productosService.getProducto(parametros['id'])
     .subscribe( (producto: ProductoDescription) => {
-
+      this.id = parametros ['id'];
       this.producto = producto;
-      console.log(producto);
-
     });
   });
 

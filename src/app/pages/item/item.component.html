@@ -1,5 +1,6 @@
 <section *ngIf="producto">
-  <header class="rk-portfolio-cover  item-inside-1">
+  <header [ngStyle]="{'background-image': 'url(assets/productos/'+ id +'/main.jpg)'}"
+  class="rk-portfolio-cover  item-inside-1">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{producto.producto}}</h1>
       <p class="ae-theta rk-portfolio-category ">{{producto.categoria}}</p>
@@ -24,10 +25,13 @@
         <p class="ae-eta">{{producto.desc1}}</p>
         <p class="ae-eta">It includes a A6 flyer, A5 folder, A4 horizontal paper and a business card mockup. You can easily put your own graphics and create a new layout according to your needs.</p>
       </div>
-      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/img/inner-1.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+        <img src="assets/productos/{{ id }}/pic-1.jpg" alt="Urku Portfolio">
+      </div>
     </div>
     <div class="ae-grid ae-grid--collapse">
-      <div class="ae-grid__item item-lg-8"><img src="assets/img/inner-2.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-8">
+        <img src="assets/productos/{{ id }}/pic-2.jpg" alt="Urku Portfolio"></div>
       <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
         <p>{{producto.desc2}} </p>
         <p class="ae-u-bolder">{{producto.subtitulo2}}</p>
