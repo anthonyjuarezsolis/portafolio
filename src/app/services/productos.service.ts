@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Producto } from '../interfaces/producto.interface';
+import { timeout } from '../../../node_modules/@types/q';
 @Injectable({
   providedIn: 'root'
 })
@@ -22,7 +23,10 @@ export class ProductosService {
 
         console.log(resp);
         this.productos = resp;
-        this.cargando = false;
+
+        setTimeout(() => {
+          this.cargando = false;
+        }, 2000);
     });
   }
 
