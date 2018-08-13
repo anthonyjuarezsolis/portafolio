@@ -13,6 +13,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { PagesComponent } from './pages/pages.component';
+import { SeachComponent } from './pages/seach/seach.component';
 
 
 
@@ -23,7 +25,9 @@ import { ItemComponent } from './pages/item/item.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    PagesComponent,
+    SeachComponent
 
   ],
   imports: [
